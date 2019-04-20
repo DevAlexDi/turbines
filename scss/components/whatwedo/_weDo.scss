@@ -1,0 +1,23 @@
+@import "layout/var";
+
+.we-do {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: baseline;
+
+   &__item {
+       width: 25%;
+       padding-right: 83px;
+       margin-bottom: 70px;
+   }
+
+   &__img {
+       margin: 0 auto 10px auto;
+   }
+
+   &__text {
+       font-size: 16px;
+       font-family: $mus700;
+       text-align: center;
+   }
+}

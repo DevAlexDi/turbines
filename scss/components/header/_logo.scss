@@ -1,0 +1,31 @@
+@import "layout/var";
+
+.logo {
+   display: flex;
+   align-items: center;
+
+   &__img {
+       flex-shrink: 0;
+   }
+
+   &__text {
+       padding-left: 10px;
+       max-width: 203px;
+   }
+
+   &__title {
+       text-transform: uppercase;
+       font-size: 18px;
+       color: #FAAC3D;
+       margin-bottom: 4px;
+       font-family: $mus700;
+
+       span {
+           color: #000;
+       }
+   }
+
+   &__sub-title {
+       font-size: 10px;
+   }
+}

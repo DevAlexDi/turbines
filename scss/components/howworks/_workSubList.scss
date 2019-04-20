@@ -1,0 +1,30 @@
+@import "layout/var";
+
+.work-sub-list {
+    padding: 0;
+    list-style: none;
+    padding-left: 12px;
+
+    &__item {
+        padding-left: 20px;
+        position: relative;
+        margin-bottom: 16px;
+        font-size: 18px;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 9px;
+            left: 0;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #FAAC3D;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@import "layout/var";
+
+.form-baner {
+    width: 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 48px 32px 24px 32px;
+    position: relative;
+    z-index: 2;
+    
+    &__title {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 100px;
+        font-family: $mus700;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #E8E8E8;
+        font-size: 18px;
+        color: #606060;
+        padding: 5px 0;
+        margin-bottom: 33px;
+
+        &::-webkit-input-placeholder {
+            color: #606060;
+        }
+
+        &::-moz-placeholder{
+            color: #606060;
+        }
+
+        &:-moz-placeholder{
+            color: #606060;
+        }
+
+        &:-ms-input-placeholder{
+            color: #606060;
+        }
+
+        &--tel {
+            font-size: 18px;
+            font-family: $mus700;
+        }
+    }
+
+    &__politics {
+        padding-top: 100px;
+        font-size: 14px;
+        color: #4C4C4C;
+        margin-bottom: 40px;
+        
+        span {
+            border-bottom: 1px solid #4C4C4C;
+            cursor: pointer;
+        }
+    }
+
+    &__button {
+        display: block;
+        max-width: 203px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px 0;
+        font-size: 16px;
+        color: #fff;
+        border: none;
+        outline: none;
+        background: linear-gradient(0deg, #FDC965, #FDC965);
+        box-shadow: 0px 4px 25px rgba(247, 170, 57, 0.5);
+        border-radius: 40px;
+    }
+}

@@ -1,0 +1,16 @@
+@import "layout/var";
+
+.how-works {
+    display: flex;
+    align-items: flex-start;
+
+    &__left-side {
+        padding-right: 16px;
+        width: 47%;
+    }
+
+    &__right-side {
+        padding-left: 16px;
+        width: 53%;
+    }
+}

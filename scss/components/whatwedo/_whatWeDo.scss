@@ -1,0 +1,14 @@
+@import "layout/var";
+
+.what-we-do {
+    display: flex;
+    align-items: center;
+
+    &__left {
+        width: 100%;
+    }
+
+    &__right {
+        flex-shrink: 0;
+    }
+}

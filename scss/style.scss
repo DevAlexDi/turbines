@@ -1,0 +1,29 @@
+@import "base/fonts";
+@import "layout/var";
+@import "layout/app";
+//header
+@import "components/header/header";
+@import "components/header/navigation";
+@import "components/header/logo";
+@import "components/header/menuList";
+@import "components/header/select";
+//baner
+@import "components/baner/banerWrapper";
+@import "components/baner/baner";
+@import "components/baner/banerText";
+@import "components/baner/banerList";
+@import "components/baner/formBaner";
+//repair
+@import "components/repair/repair";
+//video
+@import "components/video/videoWrapper";
+@import "components/video/video";
+//how works
+@import "components/howworks/howWorksWrapp";
+@import "components/howworks/howWorks";
+@import "components/howworks/workList";
+@import "components/howworks/workSubList";
+//what we do
+@import "components/whatwedo/whatWeDoWrapp";
+@import "components/whatwedo/whatWeDo";
+@import "components/whatwedo/weDo";
