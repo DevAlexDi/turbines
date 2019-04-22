@@ -1,0 +1,27 @@
+@import "layout/var";
+
+.clients-wrapp {
+    padding: 60px 0 0 0;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: 991px){
+        padding-top: 30px;
+    }
+
+    @media (max-width: 767px){
+        padding-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-family: $mus700;
+        text-align: center;
+        margin-bottom: 60px;
+
+        @media (max-width: 991px){
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+    }
+}

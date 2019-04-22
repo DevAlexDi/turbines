@@ -1,0 +1,21 @@
+@import "layout/var";
+
+.how-repair-wrapp {
+   padding-top: 40px;
+
+   @media (max-width: 991px){
+       padding-top: 0;
+   }
+
+   &__title {
+       font-family: $mus700;
+       text-align: center;
+       font-size: 36px;
+       margin-bottom: 78px;
+
+       @media (max-width: 991px){
+           font-size: 24px;
+           margin-bottom: 40px;
+       }
+   }
+}

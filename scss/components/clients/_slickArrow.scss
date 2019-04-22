@@ -1,0 +1,100 @@
+@import "layout/var";
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    font-size: 0;
+    border: none;
+    width: 44px;
+    height: 44px;
+    outline: none;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.12);
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        transition: border-color 0.3s;
+    }
+    
+    &.slick-prev {
+        left: -80px;
+
+        @media (max-width: 1650px){
+            left: -45px;
+        }
+
+        &:before {
+            left: calc(50% - 3px);
+            border-width: 11.5px 13px 11.5px 0;
+            border-color: transparent #c4c4c4 transparent transparent;
+        }
+
+        &:hover {
+            &:before {
+                border-color: transparent #FAAC3D transparent transparent;
+            }
+        }
+    }
+
+    &.slick-next {
+        right: -80px;
+
+        @media (max-width: 1650px){
+            right: -45px;
+        }
+
+        &:before {
+            left: calc(50% + 3px);
+            border-width: 11.5px 0 11.5px 13px;
+            border-color: transparent transparent transparent #c4c4c4;
+        }
+
+        &:hover {
+            &:before {
+                border-color: transparent transparent transparent #FAAC3D;
+            }
+        }
+    }
+}
+
+.slick-dots {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 767px){
+        display: flex!important;
+    }
+    li {
+        padding: 0 3px;
+        button{
+            display: block;
+            font-size: 0;
+            border: 0;
+            padding: 0;
+            width: 8px;
+            height: 8px;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+        }
+
+        &.slick-active {
+            button{
+                background: #FAAC3D;
+            }
+        }
+    }
+}

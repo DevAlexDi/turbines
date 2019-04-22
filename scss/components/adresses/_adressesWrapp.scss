@@ -1,0 +1,22 @@
+@import "layout/var";
+
+.adresses-wrapp {
+    background: #FAFAFA;
+    padding: 60px 0;
+
+    @media (max-width: 991px){
+        padding: 40px 0;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-family: $mus700;
+        text-align: center;
+        margin-bottom: 60px;
+
+        @media (max-width: 991px){
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+    }
+}

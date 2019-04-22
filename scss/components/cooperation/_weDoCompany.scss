@@ -1,0 +1,75 @@
+@import "layout/var";
+
+.we-do-company {
+    display: flex;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 1199px){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        width: 33.33%;
+        padding-right: 80px;
+
+        @media (max-width: 1460px){
+            padding-right: 40px;
+        }
+
+        @media (max-width: 1199px){
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 991px){
+            padding-right: 32px;
+        }
+
+        @media (max-width: 767px){
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+
+    &__icon {
+        width: 162px;
+        height: 162px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 32px auto;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.05), inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+        @media (max-width: 991px){
+            width: 80px;
+            height: 80px;
+            margin-bottom: 16px;
+            box-shadow: 0px 13px 20px rgba(0, 0, 0, 0.05), inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            @media (max-width: 991px){
+                max-width: 45px;
+            }
+        }
+    }
+
+    
+
+    &__text {
+        font-size: 18px;
+
+        @media (max-width: 1460px){
+            font-size: 16px;
+        }
+
+        @media (max-width: 991px){
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}

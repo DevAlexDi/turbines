@@ -18,7 +18,62 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
     max-width: 1460px;
 
+    @media (max-width: 1460px){
+        max-width: 1199px;
+    }
+
+    @media (max-width: 1199px){
+        max-width: 991px;
+    }
+
+    @media (max-width: 991px){
+        max-width: 767px;
+    }
+
+    @media (max-width: 767px){
+        padding: 0 15px;
+    }
+
     &--without-padd {
         padding: 0;
     }
+
+    &--clients {
+        @media (max-width: 1580px){
+            max-width: 1350px;
+        }
+
+        @media (max-width: 1460px){
+            max-width: 1084px;
+        }
+
+        @media (max-width: 1199px){
+            max-width: 860px;
+        }
+
+        @media (max-width: 991px){
+            max-width: 650px;
+        }
+
+        @media (max-width: 767px){
+            max-width: 100%;
+        }
+    }
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 18px;
+    padding-left: 0;
+
+    .icon-bar {
+        background: #000;
+    }
+}
+.navbar-collapse {
+    padding: 0;
 }

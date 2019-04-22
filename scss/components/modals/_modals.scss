@@ -1,0 +1,50 @@
+@import "layout/var";
+
+.modal-form {
+    
+    .modal-dialog {
+        width: 400px;
+        position: relative;
+        @media (max-width: 991px){
+            width: 330px;
+        }
+
+        @media (max-width: 767px){
+            width: 290px;
+            margin: 20px auto;
+        }
+        
+    }
+}
+
+.modal-dialog{
+    @media (max-width: 767px){
+        width: 290px;
+        margin: 20px auto;
+    }
+}
+
+.close-modal {
+    position: absolute;
+    display: block;
+    top: 16px;
+    right: 16px;
+    background: transparent;
+    font-size: 14px;
+    border: none;
+    color: #000;
+    z-index: 500;
+
+    @media (max-width: 991px){
+        top: 8px;
+        right: 8px;
+    }
+}
+
+.modal-backdrop {
+    background: #fff;
+
+    &.in {
+        opacity: 0.6;
+    }
+}

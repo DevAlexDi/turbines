@@ -11,6 +11,10 @@
         margin-bottom: 16px;
         font-size: 18px;
 
+        @media (max-width: 991px){
+            font-size: 15px;
+        }
+
         &:before {
             content: "";
             display: block;
@@ -21,6 +25,10 @@
             height: 8px;
             border-radius: 50%;
             background: #FAAC3D;
+
+            @media (max-width: 991px){
+                top: 6px;
+            }
         }
 
         &:last-child {

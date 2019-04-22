@@ -3,9 +3,17 @@
 .logo {
    display: flex;
    align-items: center;
+   
+   @media (max-width: 767px){
+       margin-bottom: 10px;
+   }
 
    &__img {
        flex-shrink: 0;
+
+       @media (max-width: 1460px){
+           width: 50px;
+       }
    }
 
    &__text {
@@ -20,6 +28,10 @@
        margin-bottom: 4px;
        font-family: $mus700;
 
+       @media (max-width: 1460px){
+           font-size: 16px;
+       }
+
        span {
            color: #000;
        }
@@ -27,5 +39,9 @@
 
    &__sub-title {
        font-size: 10px;
+
+       @media (max-width: 1460px){
+            font-size: 9px;
+       }
    }
 }

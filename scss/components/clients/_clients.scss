@@ -1,0 +1,103 @@
+@import "layout/var";
+
+.clients {
+    &__slide {
+        padding: 48px 20px;
+        outline: none;
+
+        @media (max-width: 767px){
+            padding: 15px 15px 35px 15px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        padding: 16px 24px 24px 24px;
+        min-height: 343px;
+
+        @media (max-width: 991px){
+            min-height: auto;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: -48px;
+        left: 20px;
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        border: 5px solid #FAAC3D;
+
+        @media (max-width: 767px){
+            width: 70px;
+            height: 70px;
+            position: relative;
+            top: 0;
+            left: 0;
+            border: 2px solid #FAAC3D;
+            margin: 0 auto 10px auto;
+        }
+    }
+
+    &__head {
+        padding-left: 152px;
+
+        @media (max-width: 767px){
+            padding-left: 0;
+        }
+    }
+
+    &__name {
+        font-size: 18px;
+        font-family: $mus700;
+        margin-bottom: 8px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        @media (max-width: 1199px){
+            display: block;
+        }
+
+        @media (max-width: 991px){
+            display: flex;
+        }
+
+        @media (max-width: 767px){
+            display: block;
+        }
+    }
+
+    &__location {
+        padding-right: 15px;
+        font-size: 14px;
+        font-family: $mus700;
+
+        @media (max-width: 1199px){
+            margin-bottom: 10px;
+        }
+    }
+
+    &__stars {
+        flex-shrink: 0;
+    }
+
+    &__review {
+        font-size: 16px;
+        text-align: justify;
+
+        @media (max-width: 767px){
+            font-size: 14px;
+        }
+    }
+}

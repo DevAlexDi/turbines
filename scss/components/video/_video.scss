@@ -10,10 +10,15 @@
         font-weight: normal;
         font-family: $mus700;
         text-align: center;
+
+        @media (max-width: 991px){
+            font-size: 24px;
+        }
     }
 
     &__border {
         position: relative;
+        left: -24px;
         background-image: url(../img/ipad.png);
         background-repeat: no-repeat;
         background-size: contain;
@@ -21,6 +26,18 @@
         width: 1237px;
         height: 848px;
         margin: 0 auto;
+
+        @media (max-width: 1199px){
+            width: 760px;
+            height: 523px;
+            left: -10px;
+        }
+
+        @media (max-width: 767px){
+            width: 290px;
+            height: 214px;
+            left: 4px;
+        }
     }
 
     &__iframe {
@@ -30,5 +47,19 @@
         display: block;
         width: 1036px;
         height: 647px;
+
+        @media (max-width: 1199px){
+            top: 73px;
+            left: 54px;
+            width: 635px;
+            height: 397px;
+        }
+
+        @media (max-width: 767px){
+            top: 36px;
+            left: 20px;
+            width: 243px;
+            height: 151px;
+        }
     }
 }

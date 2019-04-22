@@ -1,0 +1,21 @@
+@import "layout/var";
+
+.time-work-tel {
+    &__text-1 {
+        font-size: 12px;
+        color: #606060;
+    }
+
+    &__tel {
+        color: #000;
+        font-size: 24px;
+        font-family: $mus700;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #FAAC3D;
+        }
+
+    }
+   
+}

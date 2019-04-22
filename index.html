@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     <link href="css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
   
 </head>
@@ -23,10 +24,16 @@
                             <p class="logo__sub-title">Ремонт и продажа турбокомпрессоров, продажа электронных актуаторов</p>
                         </div>
                     </div>
-                    <select class="select-city navigation__select">
-                        <option>Москва</option>
-                        <option>Волгоград</option>
-                    </select>
+                    <div class="navigation__xs-flex">
+                        <select class="select-city navigation__select">
+                            <option>Москва</option>
+                            <option>Волгоград</option>
+                        </select>
+                        <div class="navigation__md-hidden">
+                            <button class="navigation__button"></button>
+                            <p class="navigation__call"><a href="tel:+78008888888">+7 800 888 88 88 </a></p>
+                        </div>
+                    </div>
                 </div>
                 <nav class="menu navigation__menu">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
@@ -56,9 +63,10 @@
                     </div>
                 </nav>
                 <div class="navigation__right-side">
+                    <button class="navigation__button"></button>
                     <div>
                         <p class="navigation__call-text">Звонки бесплатные</p>
-                        <p class="navigation__call"><a href="tel:+78008888888">+7 800 888 88 88</a> Ежедневно с 9:00 до 00:00</p>
+                        <p class="navigation__call"><a href="tel:+78008888888">+7 800 888 88 88 </a><span>Ежедневно с 9:00 до 00:00</span></p>
                     </div>
                 </div>
             </div>
@@ -98,12 +106,19 @@
                     </ul>
                 </div>
                 <div class="baner__right">
-                    <form class="form-baner">
+                    <!-- form-baner--sended for success submit form -->
+                    <form class="form-baner ">
                         <p class="form-baner__title">Узнайте стоимость ремонта<br>Вашей турбины</p>
+                        <!-- form-baner__input--error if error -->
                         <input class="form-baner__input" type="text" placeholder="Введите имя">
+                        <!-- form-baner__input--error if error -->
                         <input class="form-baner__input form-baner__input--tel" type="text" placeholder="+7">
-                        <p class="form-baner__politics">Нажимая на кнопку "Отправить" вы соглашаетесь с нашей <span>Политикой конфиденциальности</span></p>
+                        <p class="form-baner__politics">Нажимая на кнопку "Отправить" вы соглашаетесь с нашей <span class="open-agreement">Политикой конфиденциальности</span></p>
                         <button class="form-baner__button" type="submit">Отправить</button>
+                        <div class="form-baner__sended">
+                            <p class="form-baner__sended-text-1">Спасибо!</p>
+                            <p class="form-baner__sended-text-2">Ваша заявка отправлена.<br>В ближайшее время с Вами свяжутся</p>
+                        </div>
                     </form>
                     <img src="../img/baner.png" class="baner__image" alt="">
                 </div>
@@ -156,7 +171,7 @@
             <div class="video">
                 <h3 class="video__title">Узнай за 2 минуты как качественно починить турбину и не попасть на повторный ремонт</h3>
                 <div class="video__border">
-                    <iframe class="video__iframe" src="https://www.youtube.com/embed/Kg9QUwkXDg4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video__iframe" src="https://www.youtube.com/embed/RED4Ea-oW4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -271,24 +286,377 @@
                         <p class="form-baner__title">Узнайте стоимость ремонта<br>Вашей турбины</p>
                         <input class="form-baner__input" type="text" placeholder="Введите имя">
                         <input class="form-baner__input form-baner__input--tel" type="text" placeholder="+7">
-                        <p class="form-baner__politics">Нажимая на кнопку "Отправить" вы соглашаетесь с нашей <span>Политикой конфиденциальности</span></p>
+                        <p class="form-baner__politics">Нажимая на кнопку "Отправить" вы соглашаетесь с нашей <span class="open-agreement">Политикой конфиденциальности</span></p>
                         <button class="form-baner__button" type="submit">Отправить</button>
+                        <div class="form-baner__sended">
+                            <p class="form-baner__sended-text-1">Спасибо!</p>
+                            <p class="form-baner__sended-text-2">Ваша заявка отправлена.<br>В ближайшее время с Вами свяжутся</p>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+    <section class="how-repair-wrapp">
+        <div class="wrapper">
+            <h4 class="how-repair-wrapp__title">Как починить турбину на нашем заводе</h4>
+        </div>
+        <div class="wrapper wrapper--without-padd">
+            <div class="how-repair">
+                <div class="how-repair__item">
+                    <div class="how-repair__icon">
+                        <img src="img/hr1.svg" class="img-responsive" alt="">
+                    </div>
+                    <p class="how-repair__text">Сделать демонтаж турбины в любом автосервисе</p>
+                    <p class="how-repair__count">1</p>
+                </div>
+                <div class="how-repair__item">
+                    <div class="how-repair__icon">
+                        <img src="img/hr2.svg" class="img-responsive" alt="">
+                    </div>
+                    <p class="how-repair__text">Отправить турбину нам транспортной компанией или почтой</p>
+                    <p class="how-repair__count">2</p>
+                </div>
+                <div class="how-repair__item">
+                    <div class="how-repair__icon">
+                        <img src="img/hr3.svg" class="img-responsive" alt="">
+                    </div>
+                    <p class="how-repair__text">Связаться с нашим менеджером и передать данные для отслеживания вашей турбины</p>
+                    <p class="how-repair__count">3</p>
+                </div>
+                <div class="how-repair__item">
+                    <div class="how-repair__icon">
+                        <img src="img/hr4.svg" class="img-responsive" alt="">
+                    </div>
+                    <p class="how-repair__text">Наш менеджер отследит приход вашей турбины в Москву и наш курьер заберет турбину и привезет к нам на завод. Менеджер вас проинформирует об этом.</p>
+                    <p class="how-repair__count">4</p>
+                </div>
+                <div class="how-repair__item">
+                    <div class="how-repair__icon">
+                        <img src="img/hr5.svg" class="img-responsive" alt="">
+                    </div>
+                    <p class="how-repair__text">На нашем заводе сделают полную диагностику турбины и свяжуться с вами. Сделают фото и видеосьемку. После специалист все по пунктам расскажет, что вызвало проблему</p>
+                    <p class="how-repair__count">5</p>
+                </div>
+                <div class="how-repair__item">
+                    <div class="how-repair__icon">
+                        <img src="img/hr6.svg" class="img-responsive" alt="">
+                    </div>
+                    <p class="how-repair__text">Будет произведен рассчет стоимости ремонта вашей турбины. Сумма будет согласованна с Вами.</p>
+                    <p class="how-repair__count">6</p>
+                </div>
+                <div class="how-repair__item">
+                    <div class="how-repair__icon">
+                        <img src="img/hr7.svg" class="img-responsive" alt="">
+                    </div>
+                    <p class="how-repair__text">Производите оплату ремонта удобным способом</p>
+                    <p class="how-repair__count">7</p>
+                </div>
+                <div class="how-repair__item">
+                    <div class="how-repair__icon">
+                        <img src="img/hr8.svg" class="img-responsive" alt="">
+                    </div>
+                    <p class="how-repair__text">Ремонтируем турбину и отправляем ее обратно. Наш менеджер будет контролировать весь процесс до момента  получения Вами турбины. <span>С турбиноый Вы получаете: Заказ наряд, чек и заводскую гарантию на 6 месяцев</span></p>
+                    <p class="how-repair__count">8</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="adresses-wrapp">
+        <div class="wrapper">
+            <h4 class="adresses-wrapp__title">Адреса транспортных компаний в вашем городе</h4>
+            <div class="adresses">
+                <div class="adresses__left-side">
+                    <div class="map-wrapp">
+                        <div class="map-wrapp__map-before">
+                            <div class="map-wrapp__map-init" id="map"></div>
+                        </div>
+                    </div>
+                    <p class="adresses__left-text">Вам необходимо связаться с транспортной компаний и уточнить стоимость доставки турбины на наш завод по адресу 107143 г.Москва ул.Тагильская 4с4 (Завод МетроМаш)</p>
+                    <div class="time-work-tel">
+                        <p class="time-work-tel__text-1">Звонки бесплатные</p>
+                        <a class="time-work-tel__tel" href="tel:+78008888888">+7 800 888 88 88</a>
+                        <p class="time-work-tel__text-1">Ежедневно с 9:00 до 00:00</p>
+                    </div>
+                </div>
+                <div class="adresses__right-side">
+                    <div class="adresses-list">
+                        <p class="adresses-list__title">СДЭК - транспортная служба Волгограда</p>
+                        <div class="adresses-list__item">
+                            <p class="adresses-list__adress">Волгоград, ул. Ленинад. 38</p>
+                            <p class="adresses-list__tel-map">
+                                <a class="adresses-list__tel" href="tel:+78008888888">+7 999 999 99 99</a>
+                                <span class="adresses-list__map show_on_map" data-lat="55.702954" data-lon="37.662628">На карте</span>
+                            </p>
+                        </div>
+                        <div class="adresses-list__item">
+                            <p class="adresses-list__adress">Волгоград, ул. Ленинад. 38</p>
+                            <p class="adresses-list__tel-map">
+                                <a class="adresses-list__tel" href="tel:+78008888888">+7 999 999 99 99</a>
+                                <span class="adresses-list__map show_on_map" data-lat="55.747399" data-lon="37.664644">На карте</span>
+                            </p>
+                        </div>
+                        <div class="adresses-list__item">
+                            <p class="adresses-list__adress">Волгоград, ул. Ленинад. 38 стр. 4 с 5</p>
+                            <p class="adresses-list__tel-map">
+                                <a class="adresses-list__tel" href="tel:+78008888888">+7 999 999 99 99</a>
+                                <span class="adresses-list__map show_on_map" data-lat="55.747399" data-lon="37.664644">На карте</span>
+                            </p>
+                        </div>
+                        <div class="adresses-list__item">
+                            <p class="adresses-list__adress">Волгоград, ул. Ленинад. 38</p>
+                            <p class="adresses-list__tel-map">
+                                <a class="adresses-list__tel" href="tel:+78008888888">+7 999 999 99 99</a>
+                                <span class="adresses-list__map show_on_map" data-lat="55.747399" data-lon="37.664644">На карте</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="adresses-list">
+                        <p class="adresses-list__title">СДЭК - транспортная служба Волгограда</p>
+                        <div class="adresses-list__item">
+                            <p class="adresses-list__adress">Волгоград, ул. Ленинад. 38</p>
+                            <p class="adresses-list__tel-map">
+                                <a class="adresses-list__tel" href="tel:+78008888888">+7 999 999 99 99</a>
+                                <span class="adresses-list__map show_on_map" data-lat="55.747399" data-lon="37.664644">На карте</span>
+                            </p>
+                        </div>
+                        <div class="adresses-list__item">
+                            <p class="adresses-list__adress">Волгоград, ул. Ленинад. 38</p>
+                            <p class="adresses-list__tel-map">
+                                <a class="adresses-list__tel" href="tel:+78008888888">+7 999 999 99 99</a>
+                                <span class="adresses-list__map show_on_map" data-lat="55.747399" data-lon="37.664644">На карте</span>
+                            </p>
+                        </div>
+                        <div class="adresses-list__item">
+                            <p class="adresses-list__adress">Волгоград, ул. Ленинад. 38 стр. 4 с 5</p>
+                            <p class="adresses-list__tel-map">
+                                <a class="adresses-list__tel" href="tel:+78008888888">+7 999 999 99 99</a>
+                                <span class="adresses-list__map show_on_map" data-lat="55.747399" data-lon="37.664644">На карте</span>
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients-wrapp">
+        <div class="wrapper">
+            <h4 class="clients-wrapp__title">Довольные клиенты г. Волгограда</h4>
+        </div>
+        <div class="wrapper wrapper--without-padd wrapper--clients">
+            <div class="clients">
+                <div class="clients__slide">
+                    <div class="clients__item">
+                        <div class="clients__img" style="background-image: url(img/ava.jpg)"></div>
+                        <div class="clients__head">
+                            <p class="clients__name">Сергей Сергеев</p>
+                            <div class="clients__info">
+                                <p class="clients__location">Г. Волгоград</p>
+                                <img src="img/stars.svg" class="clients__stars img-responsive" alt="">
+                            </div>
+                        </div>
+                        <p class="clients__review">Появилась неровная работа двигателя во время поездок по городу и ускорения. Объехал несколько автосервисов, которые диагностировали проблему с турбиной. Но я решил выбрать лучший вариант и продолжил поиск компании по ремонту турбины. Приехал и в «Ремонт турбин 24», понял, что эти ребята ремонтируют все, что только можно, и даже другие сервисы привозят им турбины. В итоге все ремонтные работы заняли 1 день. Дали гарантию на 1 год без учета пробега. Я доволен. </p>
+                    </div>
+                </div>
+                <div class="clients__slide">
+                    <div class="clients__item">
+                        <div class="clients__img" style="background-image: url(img/ava.jpg)"></div>
+                        <div class="clients__head">
+                            <p class="clients__name">Сергей Сергеев</p>
+                            <div class="clients__info">
+                                <p class="clients__location">Г. Волгоград</p>
+                                <img src="img/stars.svg" class="clients__stars img-responsive" alt="">
+                            </div>
+                        </div>
+                        <p class="clients__review">Появиллько автосервисов, которые диагностировали проблему с турбиной. Но я решил выбрать лучший вариант и продолжил поиск компании по ремонту турбины. Приехал и в «Ремонт турбин 24», понял, что эти ребята ремонтируют все, что только можно, и даже другие сервисы привозят им турбины. В итоге все ремонтные работы заняли 1 день. Дали гарантию на 1 год без учета пробега. Я доволен. </p>
+                    </div>
+                </div>
+                <div class="clients__slide">
+                    <div class="clients__item">
+                        <div class="clients__img" style="background-image: url(img/ava.jpg)"></div>
+                        <div class="clients__head">
+                            <p class="clients__name">Сергей Сергеев</p>
+                            <div class="clients__info">
+                                <p class="clients__location">Г. Волгоград</p>
+                                <img src="img/stars.svg" class="clients__stars img-responsive" alt="">
+                            </div>
+                        </div>
+                        <p class="clients__review">Появилась неровная работа двигателя во время поездок по городу и ускорения. Объехал несколько автосервисов, которые диагностировали проблему с турбиной. Но я решил выбрать лучший вариант и продолжил поиск компании по ремонту турбины. Приехал и в «Ремонт турбин 24», понял, что эти ребята ремонтируют все, что только можно, и даже другие сервисы привозят им турбины. В итоге все ремонтные работы заняли 1 день. Дали гарантию на 1 год без учета пробега. Я доволен. </p>
+                    </div>
+                </div>
+                <div class="clients__slide">
+                    <div class="clients__item">
+                        <div class="clients__img" style="background-image: url(img/ava.jpg)"></div>
+                        <div class="clients__head">
+                            <p class="clients__name">Сергей Сергеев</p>
+                            <div class="clients__info">
+                                <p class="clients__location">Г. Волгоград</p>
+                                <img src="img/stars.svg" class="clients__stars img-responsive" alt="">
+                            </div>
+                        </div>
+                        <p class="clients__review">Появилась неровная работа двигателя во время поездок по городу и ускорения. Объехал несколько автосервисов, которые диагностировали проблему с турбиной. Но я решил выбрать лучший вариант и продолжил поиск компании по ремонту турбины. Приехал и в «Ремонт турбин 24», понял, что эти ребята ремонтируют все, что только можно, и даже другие сервисы привозят им турбины. В итоге все ремонтные работы заняли 1 день. Дали гарантию на 1 год без учета пробега. Я доволен. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cooperation-wrapper">
+        <div class="wrapper">
+            <h4 class="cooperation-wrapper__title">Сотрудничество с Автосервисами</h4>
+            <p class="cooperation-wrapper__sub-title">Наша компания предлогает к сотрудничеству Автосервисы. Откройте новое направление в сервисе по ремонту турбин в г. Волгоград и получите дополнительный доход автосервиса с каждой отремонтированной турбины.</p>
+            <div class="what-we-do">
+                <div class="we-do-company what-we-do__left">
+                    <div class="we-do-company__item">
+                        <div class="we-do-company__icon">
+                            <img src="img/comp1.svg" class="img-responsive" alt="">
+                        </div>
+                        <p class="we-do-company__text">Монтаж и демонтаж турбины стоит примерно 15 тыс. рублей, а это неплохой доход для вашего автосервиса.</p>
+                    </div>
+                    <div class="we-do-company__item">
+                        <div class="we-do-company__icon">
+                            <img src="img/comp2.svg" class="img-responsive" alt="">
+                        </div>
+                        <p class="we-do-company__text">Получите свою комиссию с каждой отправленной турбины.</p>
+                    </div>
+                    <div class="we-do-company__item">
+                        <div class="we-do-company__icon">
+                            <img src="img/comp3.svg" class="img-responsive" alt="">
+                        </div>
+                        <p class="we-do-company__text">Наши специалисты помогут Вам в поиске причин неисправностей в автомобиле, которя привела к поломке турбины.</p>
+                    </div>
+                </div>
+                <div class="what-we-do__right">
+                    <form class="form-baner form-baner--less-distance">
+                        <p class="form-baner__title">Узнайте стоимость ремонта<br>Вашей турбины</p>
+                        <input class="form-baner__input" type="text" placeholder="Введите имя">
+                        <input class="form-baner__input" type="text" placeholder="Компания / Сервис">
+                        <input class="form-baner__input form-baner__input--tel" type="text" placeholder="+7">
+                        <p class="form-baner__politics">Нажимая на кнопку "Отправить" вы соглашаетесь с нашей <span class="open-agreement">Политикой конфиденциальности</span></p>
+                        <button class="form-baner__button form-baner__button--dark-orange" type="submit">Заявка на сотрудничество</button>
+                        <div class="form-baner__sended">
+                            <p class="form-baner__sended-text-1">Спасибо!</p>
+                            <p class="form-baner__sended-text-2">Ваша заявка отправлена.<br>В ближайшее время с Вами свяжутся</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts-wrapp">
+        <div class="wrapper">
+            <h4 class="contacts-wrapp__title">Контакты</h4>
+            <div class="contacts">
+                <div class="contacts__left">
+                    <p class="contacts__location"><img src="img/cont1.svg" class="img-responsive contacts__location-image" alt="">г. Москва, завод МЕТРОМАШ, ул. Тагильская, дом 4, стр. 4</p>
+                    <div class="contacts__flex">
+                        <a href="tel:+78008888888" class="contacts__tel"><img src="img/cont2.svg" class="img-responsive contacts__location-image" alt="">+ 7 999 999 99 99</a>
+                    </div>
+                    <p class="contacts__work-time"><img src="img/cont3.svg" class="img-responsive contacts__location-image" alt="">График работ: Ежедневно с 9:00 до 00:00</p>
+                    <div class="contacts__flex">
+                        <button class="contacts__requisites">Наши реквизиты</button>
+                    </div>
+                </div>
+                <div class="contacts__right">
+                    <div class="map-wrapp">
+                        <div class="map-wrapp__map-before">
+                            <div class="map-wrapp__map-init" id="mapTwo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__butt-wrapp">
+                <button class="footer__button open-agreement">Политика конфиденциальности</button>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade modal-form" id="modal-form" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            <form class="form-baner">
+                <p class="form-baner__title">Узнайте стоимость ремонта<br>Вашей турбины</p>
+                <input class="form-baner__input" type="text" placeholder="Введите имя">
+                <input class="form-baner__input form-baner__input--tel" type="text" placeholder="+7">
+                <p class="form-baner__politics">Нажимая на кнопку "Отправить" вы соглашаетесь с нашей <span>Политикой конфиденциальности</span></p>
+                <button class="form-baner__button" type="submit">Отправить</button>
+                <div class="form-baner__sended">
+                    <p class="form-baner__sended-text-1">Спасибо!</p>
+                    <p class="form-baner__sended-text-2">Ваша заявка отправлена.<br>В ближайшее время с Вами свяжутся</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal fade modal-requisites" id="modal-requisites" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-requisites__body">
+                <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">Закрыть</button>
+                <p class="modal-requisites__title">РЕКВИЗИТЫ</p>
+                <p class="modal-requisites__sub-title">ООО «ШЕРИФ 24»</p>
+                <div class="modal-requisites__item">
+                    <p class="modal-requisites__key">Полное наименование фирмы</p>
+                    <p class="modal-requisites__value">Общество с ограниченной ответственностью «ШЕРИФ 24»</p>
+                </div>
+                <div class="modal-requisites__item">
+                    <p class="modal-requisites__key">Юридический адрес</p>
+                    <p class="modal-requisites__value">107065, г. Москва, ул. Камчатская, д.4, корп.2, помещение VIII, комната 3</p>
+                </div>
+                <div class="modal-requisites__item">
+                    <p class="modal-requisites__key">Фактический адрес</p>
+                    <p class="modal-requisites__value">10713, г. Москва, ул. Тагильская, д. 4, стр. 4</p>
+                </div>
+                <div class="modal-requisites__item">
+                    <p class="modal-requisites__key">ОГРН</p>
+                    <p class="modal-requisites__value">1177746104436 от 06.02.2017г.</p>
+                </div>
+                <div class="modal-requisites__item">
+                    <p class="modal-requisites__key">ИНН</p>
+                    <p class="modal-requisites__value">9718046752</p>
+                </div>
+                <div class="modal-requisites__item">
+                    <p class="modal-requisites__key">Полное наименование банка</p>
+                    <p class="modal-requisites__value">АО «АЛЬФА-БАНК»</p>
+                </div>
+                <div class="modal-requisites__item">
+                    <p class="modal-requisites__key">Генеральный директор</p>
+                    <p class="modal-requisites__value">Снетков Игорь Николаевич</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-requisites" id="modal-agreement" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-requisites__body">
+                <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">Закрыть</button>
+                <p class="modal-requisites__title">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</p>
+                <p class="modal-requisites__text"><span>Введение</span> Мы стремимся уважать информацию личного характера, касающуюся посетителей нашего сайта. В настоящей Политике конфиденциальности разъясняются некоторые из мер, которые мы предпринимаем для защиты Вашей частной жизни.</p>
+                <p class="modal-requisites__text"><span>Конфиденциальность информации личного характера</span> "Информация личного характера" обозначает любую информацию, которая может быть использована для идентификации личности, например, фамилия или адрес электронной почты.</p>
+                <p class="modal-requisites__text"><span>Использование информации частного характера.</span> Информация личного характера, полученная через наш сайт, используется нами, среди прочего, для целей регистрирования пользователей, для поддержки работы и совершенствования нашего сайта, отслеживания политики и статистики пользования сайтом, а также в целях, разрешенных вами.</p>
+                <p class="modal-requisites__text"><span>Раскрытие информации частного характера.</span> Мы нанимаем другие компании или связаны с компаниями, которые по нашему поручению предоставляют услуги, такие как обработка и доставка информации, размещение информации на данном сайте, доставка содержания и услуг, предоставляемых настоящим сайтом, выполнение статистического анализа. Чтобы эти компании могли предоставлять эти услуги, мы можем сообщать им информацию личного характера, однако им будет разрешено получать только ту информацию личного характера, которая необходима им для предоставления услуг. Они обязаны соблюдать конфиденциальность этой информации, и им запрещено использовать ее в иных целях.</p>
+                <p class="modal-requisites__text">Мы можем использовать или раскрывать Ваши личные данные и по иным причинам, в том числе, если мы считаем, что это необходимо в целях выполнения требований закона или решений суда, для защиты наших прав или собственности, защиты личной безопасности пользователей нашего сайта или представителей широкой общественности, в целях расследования или принятия мер в отношении незаконной или предполагаемой незаконной деятельности, в связи с корпоративными сделками, такими как разукрупнение, слияние, консолидация, продажа активов или в маловероятном случае банкротства, или в иных целях в соответствии с Вашим согласием.</p>
+                <p class="modal-requisites__text">Мы не будем продавать, предоставлять на правах аренды или лизинга наши списки пользователей с адресами электронной почты третьим сторонам.</p>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script src="js/inputmask.js"></script>
-    <script src="js/jquery.inputmask.js"></script>
-    <script src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/inputmask.js"></script>
+    <script type="text/javascript" src="js/jquery.inputmask.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     
     <script>
-        $('.select-city').select2({
-           width: 'resolve'
-        });
+        
     
     </script>
 </body>

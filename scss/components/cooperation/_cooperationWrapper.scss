@@ -1,0 +1,49 @@
+@import "layout/var";
+
+.cooperation-wrapper {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    position: relative;
+
+    @media (max-width: 991px){
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: #FAFAFA;
+
+        @media (max-width: 1199px){
+            display: none;
+        }
+    }
+
+    &__title {
+        font-size: 36px;
+        font-family: $mus700;
+        text-align: center;
+        margin-bottom: 32px;
+
+        @media (max-width: 991px){
+            font-size: 24px;
+        }
+    }
+
+    &__sub-title {
+        font-size: 18px;
+        max-width: 1144px;
+        text-align: center;
+        margin: 0 auto 32px;
+
+        @media (max-width: 991px){
+            font-size: 16px;
+        }
+    }
+}

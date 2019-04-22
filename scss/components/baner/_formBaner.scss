@@ -8,12 +8,26 @@
     padding: 48px 32px 24px 32px;
     position: relative;
     z-index: 2;
+
+    @media (max-width: 991px){
+        width: 330px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        padding: 32px 16px 24px 16px;
+    }
+
+    @media (max-width: 767px){
+        width: 100%;
+    }
     
     &__title {
         text-align: center;
         font-size: 18px;
         margin-bottom: 100px;
         font-family: $mus700;
+
+        @media (max-width: 991px){
+            margin-bottom: 40px;
+        }
     }
 
     &__input {
@@ -26,6 +40,11 @@
         color: #606060;
         padding: 5px 0;
         margin-bottom: 33px;
+
+        @media (max-width: 991px){
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
 
         &::-webkit-input-placeholder {
             color: #606060;
@@ -43,9 +62,17 @@
             color: #606060;
         }
 
+        &--error {
+            border-bottom: 1px solid #f11a48;
+        }
+
         &--tel {
             font-size: 18px;
             font-family: $mus700;
+
+            @media (max-width: 991px){
+                font-size: 16px;
+            }
         }
     }
 
@@ -54,10 +81,23 @@
         font-size: 14px;
         color: #4C4C4C;
         margin-bottom: 40px;
+
+        @media (max-width: 991px){
+            padding-top: 40px;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
         
         span {
             border-bottom: 1px solid #4C4C4C;
+            color: #4C4C4C;
+            transition: color 0.3s, border-color 0.3s;
             cursor: pointer;
+
+            &:hover {
+                border-color: #FAAC3D;
+                color: #FAAC3D;
+            }
         }
     }
 
@@ -74,5 +114,57 @@
         background: linear-gradient(0deg, #FDC965, #FDC965);
         box-shadow: 0px 4px 25px rgba(247, 170, 57, 0.5);
         border-radius: 40px;
+
+        &--dark-orange {
+            background: linear-gradient(119.86deg, #DD0000 -220.81%, #F37500 97.01%);
+            box-shadow: 0px 4px 30px rgba(221, 0, 0, 0.5);
+            max-width: 261px;
+
+            @media (max-width: 991px){
+                box-shadow: 0px 4px 10px rgba(221, 0, 0, 0.5);
+            }
+        }
+    }
+
+    &__sended {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 20px;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__sended-text-1 {
+        font-size: 18px;
+        margin-bottom: 24px;
+        text-align: center;
+        font-family: $mus700;
+    }
+
+    &__sended-text-2{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    &--sended{
+        .form-baner__sended {
+            display: flex;
+        }
+    }
+
+    &--less-distance {
+        .form-baner__title {
+            margin-bottom: 80px;
+        }
+
+        .form-baner__politics {
+            padding-top: 80px;
+        }
     }
 }

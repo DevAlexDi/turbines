@@ -1,0 +1,21 @@
+@import "layout/var";
+
+.contacts-wrapp {
+    padding: 34px 0 60px 0;
+
+    @media (max-width: 991px){
+        padding: 24px 0 30px 0;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-family: $mus700;
+        text-align: center;
+        margin-bottom: 40px;
+
+        @media (max-width: 991px){
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    }
+}

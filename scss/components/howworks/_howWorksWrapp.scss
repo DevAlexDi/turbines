@@ -4,10 +4,23 @@
     background: #FAFAFA;
     padding: 80px 0 40px 0;
 
+    @media (max-width: 991px){
+        padding: 50px 0 20px 0;
+    }
+
     &__title {
         text-align: center;
         font-size: 36px;
         font-family: $mus700;
         margin-bottom: 70px;
+
+        @media (max-width: 991px){
+            font-size: 27px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 991px){
+            font-size: 24px;
+        }
     }
 }

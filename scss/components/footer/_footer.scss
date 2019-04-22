@@ -1,0 +1,28 @@
+@import "layout/var";
+
+.footer {
+   padding-bottom: 32px;
+
+   @media (max-width: 991px){
+    padding-bottom: 16px;
+    }
+
+   &__butt-wrapp {
+       display: flex;
+       justify-content: center;
+   }
+
+   &__button {
+       display: block;
+       border: none;
+       outline: none;
+       background: transparent;
+       color: #4C4C4C;
+       font-size: 16px;
+       transition: color 0.3s;
+
+       &:hover {
+           color: #FAAC3D;
+       }
+   }
+}
